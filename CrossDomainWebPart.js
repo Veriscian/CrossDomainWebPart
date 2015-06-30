@@ -110,7 +110,6 @@ CrossDomainWebPartLoader = function() {
 				ctx.triggerCallback(url);
 			}
 		}, false);
-		this.attach();
 	};this.initPostMessageCallback();
 
 	
