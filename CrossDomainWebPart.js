@@ -88,8 +88,7 @@ var CBManager = function(callback) {
 
 CrossDomainWebPartLoader = function() {
 	this.mWebPartClassName = "crossdomain-webpart";
-	this.mLoginPageUrl = "http://www.veriscian.com/portal/login";	
-	this.mCallback = this.mCallback || callback;
+	this.mLoginPageUrl = "http://www.veriscian.com/portal/login";
 	this.mIframeId = this.mIframeId || "authchecker-iframe";
 	
 	this.mCallbacks = this.mCallbacks || {};
