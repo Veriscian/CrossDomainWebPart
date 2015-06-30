@@ -166,7 +166,7 @@ CrossDomainWebPartLoader = function() {
 	
 	this.initAllWebParts = function() {
 		var ctx = this;
-		$('."+this.mWebPartClassName).each(function(){
+		$("."+this.mWebPartClassName).each(function(){
 			var webpart = $(this);
 			ctx.initWebPart(webpart);
 		});
