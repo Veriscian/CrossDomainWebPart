@@ -86,7 +86,7 @@ var CBManager = function(callback) {
 
 
 
-var CrossDomainWebPartLoader = function() {
+CrossDomainWebPartLoader = function() {
 	this.mWebPartClassName = "crossdomain-webpart";
 	this.mLoginPageUrl = "http://www.veriscian.com/portal/login";	
 	this.mCallback = this.mCallback || callback;
