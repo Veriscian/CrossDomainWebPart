@@ -173,3 +173,12 @@ window.CommonUtils["IsUserAuth"] = function(callback) {
 			callback(success);
 		});
 }
+window.CommonUtils["GetModelId"] = function(defaultId) {
+	try{
+		var url = new window.CommonUtils.URLParser(window.location.href);
+		var hash = url.URL.hash["modelview"];	
+		return decodeURIComponent(decodeURIComponent(hash).split("=")[1]).split("-")[1].split("=")[1].toLowerCase();
+	}catch(e){
+		return defaultId;
+	}
+}
