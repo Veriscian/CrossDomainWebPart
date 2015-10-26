@@ -177,7 +177,7 @@ window.CommonUtils["GetModelId"] = function(defaultId) {
 	try{
 		var url = new window.CommonUtils.URLParser(window.location.href);
 		var hash = url.URL.hash["modelview"];	
-		return decodeURIComponent(decodeURIComponent(hash).split("=")[1]).split("-")[1].split("=")[1].toLowerCase();
+		return decodeURIComponent(decodeURIComponent(hash).split("=")[1]).split("-")[1].split("=")[1];
 	}catch(e){
 		return defaultId;
 	}
